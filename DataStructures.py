@@ -208,3 +208,17 @@ for i in aa:
     
         
 print(f"Frequency of  all elements in the dictionary  is : {dict}")  # This will
+
+
+
+# question - 4
+
+d4 = {1: 100, 2: 200, 3: 300}
+d5 = {3: 400, 5: 500}
+
+for i in d5:
+    if i in d5.keys():
+        d4[i] = d5[i]  # Updating the value if the key exists
+    else:
+        d4[i] = d5[i]
+print(f"Updated dictionary after merging d5 into d4: {d4}")  # This will print {1: 100, 2: 200, 3: 400, 5: 500}
